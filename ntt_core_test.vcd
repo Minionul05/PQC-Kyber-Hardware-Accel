@@ -1,0 +1,323 @@
+$date
+	Tue Dec 16 14:54:50 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ntt_core $end
+$var wire 1 ! done $end
+$var wire 12 " debug_data [11:0] $end
+$var reg 1 # clk $end
+$var reg 8 $ ext_addr [7:0] $end
+$var reg 12 % ext_data [11:0] $end
+$var reg 1 & ext_we $end
+$var reg 1 ' rst $end
+$var reg 1 ( start $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 12 ) debug_out [11:0] $end
+$var wire 8 * ext_addr [7:0] $end
+$var wire 12 + ext_data [11:0] $end
+$var wire 1 & ext_we $end
+$var wire 1 ' rst $end
+$var wire 1 ( start $end
+$var wire 12 , ram_out_b [11:0] $end
+$var wire 12 - ram_out_a [11:0] $end
+$var wire 12 . butt_out_b [11:0] $end
+$var wire 12 / butt_out_a [11:0] $end
+$var parameter 32 0 STATE_CALC $end
+$var parameter 32 1 STATE_DONE $end
+$var parameter 32 2 STATE_IDLE $end
+$var parameter 32 3 STATE_READ $end
+$var parameter 32 4 STATE_WRITE $end
+$var reg 12 5 current_zeta [11:0] $end
+$var reg 1 ! done $end
+$var reg 8 6 read_addr_a [7:0] $end
+$var reg 8 7 read_addr_b [7:0] $end
+$var reg 3 8 state [2:0] $end
+$var reg 1 9 we_ram $end
+$var reg 8 : write_addr_a [7:0] $end
+$scope module compute_unit $end
+$var wire 12 ; zeta [11:0] $end
+$var wire 12 < t [11:0] $end
+$var wire 12 = out_b [11:0] $end
+$var wire 12 > out_a [11:0] $end
+$var wire 12 ? b [11:0] $end
+$var wire 12 @ a [11:0] $end
+$scope module add_unit $end
+$var wire 13 A sum_sub_q [12:0] $end
+$var wire 13 B sum_raw [12:0] $end
+$var wire 12 C out [11:0] $end
+$var wire 12 D b [11:0] $end
+$var wire 12 E a [11:0] $end
+$upscope $end
+$scope module mult_unit $end
+$var wire 12 F b [11:0] $end
+$var wire 28 G t [27:0] $end
+$var wire 12 H res_raw [11:0] $end
+$var wire 24 I prod [23:0] $end
+$var wire 12 J out [11:0] $end
+$var wire 16 K m [15:0] $end
+$var wire 12 L a [11:0] $end
+$var parameter 16 M QINV $end
+$upscope $end
+$scope module sub_unit $end
+$var wire 12 N b [11:0] $end
+$var wire 12 O out [11:0] $end
+$var wire 13 P diff_raw [12:0] $end
+$var wire 13 Q diff_add_q [12:0] $end
+$var wire 12 R a [11:0] $end
+$upscope $end
+$upscope $end
+$scope module memory_unit $end
+$var wire 8 S addr_a [7:0] $end
+$var wire 8 T addr_b [7:0] $end
+$var wire 1 # clk $end
+$var wire 12 U din_a [11:0] $end
+$var wire 1 V we $end
+$var parameter 32 W ADDR_WIDTH $end
+$var reg 12 X dout_a [11:0] $end
+$var reg 12 Y dout_b [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 W
+b1111001100000001 M
+b11 4
+b1 3
+b0 2
+b100 1
+b10 0
+$end
+#0
+$dumpvars
+bx Y
+bx X
+0V
+bx U
+b0 T
+b0 S
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+b1010 F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+b1010 ;
+bx :
+09
+b0 8
+b0 7
+b0 6
+b1010 5
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+0(
+1'
+0&
+bx %
+bx $
+0#
+bx "
+0!
+$end
+#5000
+1#
+#10000
+0#
+#15000
+1#
+#20000
+1V
+b1100100 U
+0#
+b1100100 %
+b1100100 +
+b0 $
+b0 *
+1&
+0'
+#25000
+b1100100 "
+b1100100 )
+b1100100 -
+b1100100 @
+b1100100 E
+b1100100 R
+b1100100 X
+1#
+#30000
+b110010 U
+b1 S
+0#
+b110010 %
+b110010 +
+b1 $
+b1 *
+#35000
+b101011101000 .
+b101011101000 =
+b101011101000 O
+b1001111101 /
+b1001111101 >
+b1001111101 C
+b1110111100111 P
+b101011101000 Q
+b1010101111100 A
+b1001111101 B
+b1001001011 <
+b1001001011 D
+b1001001011 J
+b1001001011 N
+b111101001100 H
+b1111111111111111111101001100 G
+b11101111101000 K
+b1111101000 I
+b1100100 ,
+b1100100 ?
+b1100100 L
+b1100100 Y
+b110010 "
+b110010 )
+b110010 -
+b110010 @
+b110010 E
+b110010 R
+b110010 X
+1#
+#40000
+0V
+b0 S
+b1001111101 U
+0#
+1(
+0&
+#45000
+b1010101111 U
+b101100011010 .
+b101100011010 =
+b101100011010 O
+b1010101111 /
+b1010101111 >
+b1010101111 C
+b101100011010 Q
+b1111000011001 P
+b1010110101110 A
+b1010101111 B
+b1100100 "
+b1100100 )
+b1100100 -
+b1100100 @
+b1100100 E
+b1100100 R
+b1100100 X
+b1 8
+1#
+#50000
+0#
+0(
+#55000
+b10 8
+b1 7
+b1 T
+1#
+#60000
+0#
+#65000
+b10010001000 U
+b100101000001 .
+b100101000001 =
+b100101000001 O
+b10010001000 /
+b10010001000 >
+b10010001000 C
+b1110001000000 P
+b100101000001 Q
+b1011110000111 A
+b10010001000 B
+b10000100100 <
+b10000100100 D
+b10000100100 J
+b10000100100 N
+b100100101 H
+b100100101 G
+b1001110111110100 K
+b111110100 I
+b110010 ,
+b110010 ?
+b110010 L
+b110010 Y
+b11 8
+1#
+#70000
+0#
+#75000
+1V
+b100 8
+19
+b0 :
+1#
+#80000
+0#
+#85000
+b100010101100 U
+b100010101100 /
+b100010101100 >
+b100010101100 C
+b1100100 .
+b1100100 =
+b1100100 O
+0V
+b110101100101 Q
+b1100100 P
+b1101110101011 A
+b100010101100 B
+b10010001000 "
+b10010001000 )
+b10010001000 -
+b10010001000 @
+b10010001000 E
+b10010001000 R
+b10010001000 X
+b0 8
+1!
+09
+1#
+#90000
+0#
+#95000
+0!
+1#
+b0 $
+b0 *
+#100000
+0#
+#105000
+1#
